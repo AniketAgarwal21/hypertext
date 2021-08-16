@@ -1,0 +1,26 @@
+.darkModeToggle {
+  cursor: pointer;
+  width: 44px;
+  position: relative;
+  height: 24px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  transition: 0.3s;
+}
+
+.switch {
+  background-color: black;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  transition: 0.3s;
+}
+
+.switchToggle {
+  margin-left: 20px;
+  transition: all ease-in-out 0.4s;
+}

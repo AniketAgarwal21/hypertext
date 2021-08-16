@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from "./Navbar.module.css"
+import ThemeToggler from './../ThemeToggler/ThemeToggler';
 
 function Navbar() {
 
@@ -20,7 +21,7 @@ function Navbar() {
     return (
         <nav>
             <div className={styles.logo}>
-                <img src="" alt="Logo" />
+                {/* <img src={process.env.PUBLIC_URL + '/images/sample-logo.jpg'} alt="Logo" /> */}
             </div>
             <div className={`${styles.hamburger} hamburger`} onClick={toggleHamburger}>
                 <div className={styles.line1}></div>
@@ -33,8 +34,9 @@ function Navbar() {
                 <li><a href="/">Products</a></li>
                 <li><a href="/">Services</a></li>
                 <li><a href="/">Contact Us</a></li>
-                <li><button className={styles.loginButton} href="#">Login</button></li>
-                <li><button className={styles.joinButton} href="#">Join</button></li>
+                {/* <li><button className={styles.loginButton} href="#">Login</button></li>
+                <li><button className={styles.joinButton} href="#">Join</button></li> */}
+                <ThemeToggler />
             </ul>
         </nav>
     )

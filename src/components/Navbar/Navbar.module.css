@@ -44,7 +44,7 @@ nav {
   margin: 0 0.7vw;
 }
 .navLinks li a:hover {
-  color: #61dafb;
+  color: #107e0c;
 }
 .navLinks li {
   position: relative;
@@ -54,11 +54,13 @@ nav {
   display: block;
   height: 3px;
   width: 0%;
-  background-color: #61dafb;
+  background-color: #107e0c;
   position: absolute;
+  top: 20px;
   transition: all ease-in-out 250ms;
-  margin: 0 0 0 10%;
+  margin: 0 0 0 9%;
 }
+
 .navLinks li a:hover::before {
   width: 80%;
 }
