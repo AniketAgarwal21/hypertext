@@ -19,9 +19,11 @@ function ThemeToggler() {
         if (theme === 'light') {
             document.body.classList.remove('dark');
             document.querySelector(`.${styles.switch}`).classList.remove(styles.switchToggle)
+            document.querySelector(`.${styles.darkModeToggle}`).style.backgroundColor = 'black'    
         } else {
             document.body.classList.add('dark');
             document.querySelector(`.${styles.switch}`).classList.add(styles.switchToggle)
+            document.querySelector(`.${styles.darkModeToggle}`).style.backgroundColor = 'white'
         }
     }, [theme])
 
