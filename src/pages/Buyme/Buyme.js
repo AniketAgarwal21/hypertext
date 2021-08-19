@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Pricing() {
+function Buyme() {
     return (
         <div>
-            Pricing
+         buyme   
         </div>
     )
 }
 
-export default Pricing
+export default Buyme

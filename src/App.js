@@ -8,8 +8,7 @@ import Home from './pages/Home/Home';
 // Components
 import Navbar from './components/Navbar/Navbar';
 import Whoami from './pages/Whoami/Whoami';
-import Features from './pages/Features/Features';
-import Pricing from './pages/Pricing/Pricing';
+import Buyme from './pages/Buyme/Buyme';
 import Testimonials from './pages/Testimonials/Testimonials';
 import Gallery from './pages/Gallery/Gallery';
 
@@ -22,8 +21,7 @@ function App() {
         <div className="container">
           <Route path="/" component={Home} exact />
           <Route path="/whoami" component={Whoami} />
-          <Route path="/features" component={Features} />
-          <Route path="/pricing" component={Pricing} />
+          <Route path="/buyme" component={Buyme} />
           <Route path="/testimonials" component={Testimonials} />
           <Route path="/gallery" component={Gallery} />
         </div>

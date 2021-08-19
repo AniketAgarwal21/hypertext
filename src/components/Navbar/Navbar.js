@@ -44,8 +44,7 @@ function Navbar() {
             <ul className={`${styles.navLinks} navLinks`}>
                 <li><Link to="/">home</Link></li>
                 <li><Link to="/whoami">whoami</Link></li>
-                <li><Link to="/features">features</Link></li>
-                <li><Link to="/pricing">pricing</Link></li>
+                <li><Link to="/buyme">buyme</Link></li>
                 <li><Link to="/testimonials">testimonials</Link></li>
                 <li><Link to="/gallery">gallery</Link></li>
                 <ThemeToggler />

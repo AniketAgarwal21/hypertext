@@ -25,7 +25,7 @@ function Home() {
                     Everyone's favorite astromech droid. <br /><br />
                     <Typewriter
                         options={{
-                            strings: ["BB-8 Beeps excitedly", "Bleep Boop Boop Beep"],
+                            strings: ["Bleep Boop Boop Beep", "(BB-8 Beeps excitedly)"],
                             autoStart: true,
                             loop: true,
                         }}
