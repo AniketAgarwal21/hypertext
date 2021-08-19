@@ -17,15 +17,15 @@ function App() {
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Navbar />
-      <Switch>
-        <div className="container">
+      <div className="container">
+        <Switch>
           <Route path="/" component={Home} exact />
           <Route path="/whoami" component={Whoami} />
           <Route path="/buyme" component={Buyme} />
           <Route path="/testimonials" component={Testimonials} />
           <Route path="/gallery" component={Gallery} />
-        </div>
-      </Switch>
+        </Switch>
+      </div>
     </BrowserRouter>
   );
 }

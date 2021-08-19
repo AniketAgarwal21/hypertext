@@ -15,8 +15,8 @@ function Card({name, content, image, position}) {
     }, [])
 
     return (
-        <div class={`cards ${position}`}>
-            <div class="review">
+        <div className={`cards ${position}`}>
+            <div className="review">
                 <h2>{name}</h2><br />
                 <h6>
                     "{content}"

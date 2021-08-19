@@ -13,24 +13,6 @@ function Testimonials() {
             position: "first"
         },
         {
-            name: "Poe Dameron",
-            content: "A brilliant droid. R2D2 saved my life. Granted, he seems a little too arrogant about it, I wouldn't trade him for any other droid.",
-            image: "poe-dam.png",
-            position: "second"
-        },
-        {
-            name: "Han Solo",
-            content: "A brilliant droid. R2D2 saved my life. Granted, he seems a little too arrogant about it, I wouldn't trade him for any other droid.",
-            image: "hans.png",
-            position: "first"
-        },
-        {
-            name: "Rey Skywalker",
-            content: "A brilliant droid. R2D2 saved my life. Granted, he seems a little too arrogant about it, I wouldn't trade him for any other droid.",
-            image: "rey.png",
-            position: "first"
-        },
-        {
             name: "Obi Wan",
             content: "now this... this is the droid you are looking for",
             image: "obi-wan.png",
@@ -40,6 +22,25 @@ function Testimonials() {
             name: "C-3PO",
             content: "That R2 unit is in prime condition, it is a real bargain... and a good friend too",
             image: "c-3po.png",
+            position: "first"
+        },
+        {
+            name: "Rey Skywalker",
+            content: "A brilliant droid. R2D2 saved my life. Granted, he seems a little too arrogant about it, I wouldn't trade him for any other droid.",
+            image: "rey.png",
+            position: "first"
+        },
+        {
+            name: "Poe Dameron",
+            content: "A brilliant droid. R2D2 saved my life. Granted, he seems a little too arrogant about it, I wouldn't trade him for any other droid.",
+            image: "poe-dam.png",
+            position: "second"
+        },
+        {
+
+            name: "Han Solo",
+            content: "A brilliant droid. R2D2 saved my life. Granted, he seems a little too arrogant about it, I wouldn't trade him for any other droid.",
+            image: "hans.png",
             position: "first"
         }
     ]
@@ -56,7 +57,7 @@ function Testimonials() {
                 />
             </div>
             <div id="testimonials">
-                {testimonials.map(e => <Card name={e.name} content={e.content} image={e.image} position={e.position} />)}
+                {testimonials.map((e, i) => <Card key={i} name={e.name} content={e.content} image={e.image} position={e.position} />)}
             </div>
         </>
     )
