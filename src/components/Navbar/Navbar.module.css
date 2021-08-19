@@ -28,6 +28,7 @@ nav {
   justify-content: space-evenly;
   align-items: center;
   text-transform: uppercase;
+  transition: 0.3s;
 }
 .navLinks li a {
   color: inherit;
