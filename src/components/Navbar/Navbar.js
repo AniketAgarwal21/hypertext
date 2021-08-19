@@ -30,12 +30,12 @@ function Navbar() {
                 <div className={styles.line3}></div>
             </div>
             <ul className={`${styles.navLinks} navLinks`}>
-                <li><Link to="/">home</Link></li>
-                <li><Link to="/whoami">whoami</Link></li>
-                <li><Link to="/features">features</Link></li>
-                <li><Link to="/pricing">pricing</Link></li>
-                <li><Link to="/testimonials">testimonials</Link></li>
-                <li><Link to="/gallery">gallery</Link></li>
+                <li><Link to={process.env.PUBLIC_URL + '/'}>home</Link></li>
+                <li><Link to={process.env.PUBLIC_URL + '/whoami'}>whoami</Link></li>
+                <li><Link to={process.env.PUBLIC_URL + '/features'}>features</Link></li>
+                <li><Link to={process.env.PUBLIC_URL + '/pricing'}>pricing</Link></li>
+                <li><Link to={process.env.PUBLIC_URL + '/testimonials'}>testimonials</Link></li>
+                <li><Link to={process.env.PUBLIC_URL + '/gallery'}>gallery</Link></li>
                 {/* <li><button className={styles.loginButton} href="#">Login</button></li>
                 <li><button className={styles.joinButton} href="#">Join</button></li> */}
                 <ThemeToggler />

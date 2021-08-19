@@ -1,6 +1,6 @@
 // Modules
 import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
 
 // Pages
 import Home from './pages/Home/Home';
@@ -20,12 +20,13 @@ function App() {
       <Navbar />
       <Switch>
         <div className="container">
-          <Route path="/" component={Home} exact />
-          <Route path="/whoami" component={Whoami} />
-          <Route path="/features" component={Features} />
-          <Route path="/pricing" component={Pricing} />
-          <Route path="/testimonials" component={Testimonials} />
-          <Route path="/gallery" component={Gallery} />
+          <Route path='/' render={() => <Redirect to={process.env.PUBLIC_URL + '/'} />} exact />
+          <Route path={process.env.PUBLIC_URL + '/'} component={Home} exact />
+          <Route path={process.env.PUBLIC_URL + '/whoami'} component={Whoami} />
+          <Route path={process.env.PUBLIC_URL + '/features'} component={Features} />
+          <Route path={process.env.PUBLIC_URL + '/pricing'} component={Pricing} />
+          <Route path={process.env.PUBLIC_URL + '/testimonials'} component={Testimonials} />
+          <Route path={process.env.PUBLIC_URL + '/gallery'} component={Gallery} />
         </div>
       </Switch>
     </BrowserRouter>
