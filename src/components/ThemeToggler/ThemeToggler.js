@@ -10,17 +10,17 @@ function ThemeToggler() {
         if (!ls) {
             setTheme('dark')
             window.localStorage.setItem('theme', 'dark')
-        } else { 
-            setTheme(ls) 
+        } else {
+            setTheme(ls)
         }
     }, [])
-    
+
     // #section1 h1{
     //     background: black;
     //     color: white;
     //     mix-blend-mode: darken;
     // }
-    
+
     useEffect(() => {
         if (theme === 'light') {
             document.body.classList.remove('dark');
@@ -28,7 +28,10 @@ function ThemeToggler() {
             document.querySelectorAll('.cards').forEach(e => e.classList.remove('darkCard'))
             document.querySelector('nav').style.backgroundColor = 'white'
             document.querySelector(`.${styles.switch}`).classList.remove(styles.switchToggle)
-            document.querySelector(`.${styles.darkModeToggle}`).style.backgroundColor = 'black'    
+            document.querySelector(`.${styles.darkModeToggle}`).style.backgroundColor = 'black'
+            document.querySelector(".navLinks").style.backgroundColor = "white";
+            document.querySelectorAll(".navLinks li a").forEach(e => e.style.color = "black");
+            document.querySelectorAll(".hamburger div").forEach(e => e.style.backgroundColor = "black");
         } else {
             document.body.classList.add('dark');
             document.querySelector('.r2d2')?.classList.add('darkr2d2')
@@ -37,6 +40,11 @@ function ThemeToggler() {
             document.querySelector('nav').style.backgroundColor = '#000'
             document.querySelector(`.${styles.switch}`).classList.add(styles.switchToggle)
             document.querySelector(`.${styles.darkModeToggle}`).style.backgroundColor = 'white'
+            document.querySelector(".navLinks").style.backgroundColor = "black";
+            document.querySelectorAll(".navLinks li a").forEach(e => e.style.color = "white");
+            document.querySelectorAll(".hamburger div").forEach(e => e.style.backgroundColor = "white");
+
+
         }
     }, [theme])
 

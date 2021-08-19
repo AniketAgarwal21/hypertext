@@ -56,43 +56,11 @@ nav {
   width: 80%;
 }
 
-/*Styling Buttons*/
-/* .loginButton {
-  background-color: transparent;
-  border: 1.5px solid #f2f5f7;
-  border-radius: 2em;
-  padding: 0.6rem 0.8rem;
-  margin-left: 2vw;
-  font-size: 1rem;
-  cursor: pointer;
-}
-.loginButton:hover {
-  color: #131418;
-  background-color: #f2f5f7;
-  border: 1.5px solid #f2f5f7;
-  transition: all ease-in-out 350ms;
-}
-.joinButton {
-  color: #131418;
-  background-color: #61dafb;
-  border: 1.5px solid #61dafb;
-  border-radius: 2em;
-  padding: 0.6rem 0.8rem;
-  font-size: 1rem;
-  cursor: pointer;
-}
-.joinButton:hover {
-  color: #f2f5f7;
-  background-color: transparent;
-  border: 1.5px solid #f2f5f7;
-  transition: all ease-in-out 350ms;
-} */
-
 /*Styling Hamburger Icon*/
 .hamburger div {
   width: 30px;
   height: 3px;
-  background: #f2f5f7;
+  background: black;
   margin: 5px;
   transition: all 0.3s ease;
 }
@@ -119,7 +87,7 @@ nav {
   .navLinks {
     position: fixed;
     /* background: #131418; */
-    background: #000;
+    background: #fff;
     height: 100vh;
     z-index: 1000;
     width: 100%;
@@ -165,10 +133,9 @@ nav {
   }
 }
 /*Animating Hamburger Icon on Click*/
-.toggle{
+.toggle {
   z-index: 10000;
 }
-
 .toggle .line1 {
   transform: rotate(-45deg) translate(-5px, 6px);
 }

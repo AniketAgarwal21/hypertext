@@ -1,6 +1,7 @@
-import React, {useEffect} from 'react'
+import React, { useEffect } from 'react'
 // import styles from "./Home.module.css"
 import './Home.css'
+import Typewriter from 'typewriter-effect';
 
 function Home() {
 
@@ -8,7 +9,7 @@ function Home() {
         const ls = window.localStorage.getItem('theme')
         if (!ls) {
             document.querySelector('.r2d2').classList.add('darkr2d2')
-        } else if(ls === 'light') { 
+        } else if (ls === 'light') {
             document.querySelector('.r2d2').classList.remove('darkr2d2')
         } else {
             document.querySelector('.r2d2').classList.add('darkr2d2')
@@ -21,7 +22,14 @@ function Home() {
             </div>
             <div id="section1">
                 <h2>
-                    Everyone's favorite astromech droid. <br /><br /> Bleep Boop Boop Beep.
+                    Everyone's favorite astromech droid. <br /><br />
+                    <Typewriter
+                        options={{
+                            strings: ["BB-8 Beeps excitedly", "Bleep Boop Boop Beep"],
+                            autoStart: true,
+                            loop: true,
+                        }}
+                    />
                 </h2>
                 <video autoPlay muted loop>
                     <source src={process.env.PUBLIC_URL + "/videos/homebg.mp4"} type="video/mp4" />

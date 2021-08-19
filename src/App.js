@@ -1,6 +1,6 @@
 // Modules
 import React from 'react';
-import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 // Pages
 import Home from './pages/Home/Home';
@@ -16,17 +16,16 @@ import Gallery from './pages/Gallery/Gallery';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Navbar />
       <Switch>
         <div className="container">
-          <Route path='/' render={() => <Redirect to={process.env.PUBLIC_URL + '/'} />} exact />
-          <Route path={process.env.PUBLIC_URL + '/'} component={Home} exact />
-          <Route path={process.env.PUBLIC_URL + '/whoami'} component={Whoami} />
-          <Route path={process.env.PUBLIC_URL + '/features'} component={Features} />
-          <Route path={process.env.PUBLIC_URL + '/pricing'} component={Pricing} />
-          <Route path={process.env.PUBLIC_URL + '/testimonials'} component={Testimonials} />
-          <Route path={process.env.PUBLIC_URL + '/gallery'} component={Gallery} />
+          <Route path="/" component={Home} exact />
+          <Route path="/whoami" component={Whoami} />
+          <Route path="/features" component={Features} />
+          <Route path="/pricing" component={Pricing} />
+          <Route path="/testimonials" component={Testimonials} />
+          <Route path="/gallery" component={Gallery} />
         </div>
       </Switch>
     </BrowserRouter>

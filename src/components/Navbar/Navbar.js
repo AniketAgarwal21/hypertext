@@ -1,9 +1,21 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from "./Navbar.module.css"
 import ThemeToggler from './../ThemeToggler/ThemeToggler';
 import { Link } from 'react-router-dom';
 
 function Navbar() {
+
+    useEffect(() => {
+        const ls = window.localStorage.getItem('theme')
+        const hamburger = document.querySelector(`.${styles.hamburger}`);
+        if (!ls) {
+            window.localStorage.setItem('theme', 'dark')
+            // hamburger.style.backgoundColor = "black"
+        } else {
+            // hamburger.style.backgoundColor = "white"
+            document.querySelector(".navLinks").style.backgroundColor = "white";
+        }
+    }, [])
 
     const toggleHamburger = (e) => {
         const hamburger = document.querySelector(`.${styles.hamburger}`);
@@ -24,20 +36,18 @@ function Navbar() {
             <div className={styles.logo}>
                 {/* <img src={process.env.PUBLIC_URL + '/images/sample-logo.jpg'} alt="Logo" /> */}
             </div>
-            <div className={`${styles.hamburger}`} onClick={toggleHamburger}>
+            <div className={`${styles.hamburger} hamburger`} onClick={toggleHamburger}>
                 <div className={styles.line1}></div>
                 <div className={styles.line2}></div>
                 <div className={styles.line3}></div>
             </div>
             <ul className={`${styles.navLinks} navLinks`}>
-                <li><Link to={process.env.PUBLIC_URL + '/'}>home</Link></li>
-                <li><Link to={process.env.PUBLIC_URL + '/whoami'}>whoami</Link></li>
-                <li><Link to={process.env.PUBLIC_URL + '/features'}>features</Link></li>
-                <li><Link to={process.env.PUBLIC_URL + '/pricing'}>pricing</Link></li>
-                <li><Link to={process.env.PUBLIC_URL + '/testimonials'}>testimonials</Link></li>
-                <li><Link to={process.env.PUBLIC_URL + '/gallery'}>gallery</Link></li>
-                {/* <li><button className={styles.loginButton} href="#">Login</button></li>
-                <li><button className={styles.joinButton} href="#">Join</button></li> */}
+                <li><Link to="/">home</Link></li>
+                <li><Link to="/whoami">whoami</Link></li>
+                <li><Link to="/features">features</Link></li>
+                <li><Link to="/pricing">pricing</Link></li>
+                <li><Link to="/testimonials">testimonials</Link></li>
+                <li><Link to="/gallery">gallery</Link></li>
                 <ThemeToggler />
             </ul>
         </nav>
