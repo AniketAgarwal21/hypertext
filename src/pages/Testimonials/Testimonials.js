@@ -53,6 +53,8 @@ function Testimonials() {
                         strings: ['"It takes months to find a customer, and seconds to lose one"', "See how I have helped my owners"],
                         autoStart: true,
                         loop: true,
+                        delay: 50,
+                        deleteSpeed: 30
                     }}
                 />
             </div>

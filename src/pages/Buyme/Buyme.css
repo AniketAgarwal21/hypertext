@@ -1,0 +1,100 @@
+.tab {
+  overflow: hidden;
+  border-bottom: 1px solid #ccc;
+}
+
+.tablinks {
+    color: inherit;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  margin-right: 5%;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  border: 1px solid #ccc;
+  border-radius: 5px 5px 0px 0px;
+  border-bottom: none !important;
+}
+
+.tab button.active {
+  border: 1px solid #ccc;
+  border-radius: 5px 5px 0px 0px;
+  border-bottom: none !important;
+}
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+}
+
+#buying {
+  width: 100%;
+  position: relative;
+  justify-items: center;
+  align-items: center;
+  font-family: "Lato", sans-serif;
+  font-size: 130%;
+  height: 80vh;
+  padding-bottom: 5%;
+}
+#all-tabs {
+  width: 70vw;
+}
+.tabcontent {
+  padding-top: 4vh;
+}
+.tabcontent {
+  animation: fadeEffect 0.3s;
+}
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+td {
+  text-align: center;
+}
+@media (max-width: 750px) {
+  #buying {
+    font-size: 110%;
+  }
+  #all-tabs {
+    width: 85vw;
+  }
+}
+@media (max-width: 650px) {
+  #buying {
+    font-size: 100%;
+  }
+}
+@media (max-width: 487px) {
+  #all-tabs {
+    width: 92vw;
+  }
+  #TechnicalDetails {
+    width: 96vw;
+  }
+  #buying {
+    font-size: 95%;
+  }
+}
+@media (max-width: 450px) {
+  .tab button {
+    margin-right: 0;
+    font-size: small;
+    padding: 3%;
+  }
+}
