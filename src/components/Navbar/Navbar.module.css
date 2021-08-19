@@ -1,10 +1,12 @@
 nav {
   height: 6rem;
   width: 100vw;
+  background-color: #131418;
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
   display: flex;
   position: fixed;
-  z-index: 10;
+  z-index: 1000;
+  transition: 0.3s;
 }
 
 /*Styling logo*/
@@ -32,9 +34,9 @@ nav {
   text-decoration: none;
   margin: 0 0.7vw;
 }
-.navLinks li a:hover {
+/* .navLinks li a:hover {
   color: #107e0c;
-}
+} */
 .navLinks li {
   position: relative;
 }
@@ -43,10 +45,10 @@ nav {
   display: block;
   height: 3px;
   width: 0%;
-  background-color: #107e0c;
+  background-color: #f2f5f7;
   position: absolute;
-  top: 20px;
-  transition: all ease-in-out 250ms;
+  top: 24px;
+  transition: all ease-in-out 0.3s;
   margin: 0 0 0 9%;
 }
 
@@ -55,7 +57,7 @@ nav {
 }
 
 /*Styling Buttons*/
-.loginButton {
+/* .loginButton {
   background-color: transparent;
   border: 1.5px solid #f2f5f7;
   border-radius: 2em;
@@ -84,7 +86,7 @@ nav {
   background-color: transparent;
   border: 1.5px solid #f2f5f7;
   transition: all ease-in-out 350ms;
-}
+} */
 
 /*Styling Hamburger Icon*/
 .hamburger div {
@@ -116,8 +118,10 @@ nav {
   }
   .navLinks {
     position: fixed;
-    background: #131418;
+    /* background: #131418; */
+    background: #000;
     height: 100vh;
+    z-index: 1000;
     width: 100%;
     flex-direction: column;
     clip-path: circle(50px at 90% -20%);
@@ -161,6 +165,10 @@ nav {
   }
 }
 /*Animating Hamburger Icon on Click*/
+.toggle{
+  z-index: 10000;
+}
+
 .toggle .line1 {
   transform: rotate(-45deg) translate(-5px, 6px);
 }

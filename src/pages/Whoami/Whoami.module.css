@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.whoamiImage {
+  width: 100%;
+}
+
+.whoamiContent {
+  padding-right: 100px;
+  line-height: 28px;
+  text-align: justify;
+}
+
+@media (max-width: 991px) {
+  .container {
+    flex-direction: column;
+  }
+  .whoamiImage img {
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+  }
+  .whoamiContent {
+    padding: 20px;
+    line-height: 22px;
+    text-align: center;
+  }
+}
