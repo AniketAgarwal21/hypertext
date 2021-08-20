@@ -37,7 +37,7 @@ function Navbar() {
                 <li><Link to="/gallery">gallery</Link></li>
                 <ThemeToggler />
             </ul>
-        </nav> 
+        </nav>
     )
 }
 
