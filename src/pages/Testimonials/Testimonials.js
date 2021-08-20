@@ -14,7 +14,7 @@ function Testimonials() {
         },
         {
             name: "Obi Wan",
-            content: "now this... this is the droid you are looking for",
+            content: "A life-saving bot with great versatility?Well, of course I know him. He's R2D2.",
             image: "obi-wan.png",
             position: "second"
         },
