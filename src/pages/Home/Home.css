@@ -90,21 +90,22 @@
   #section1{
     flex-direction: column;
   }
+
   #section1 h1 {
-    font-size: 950%;
-    line-height: 80%;
-    top: -110px;
-    width: 100%;
-    display: none;
+    font-size: 750%;
+    top: -85px;
+    /* line-height: 80%;*/
+    /* width: 100%; */ 
+    /* display: none; */
   }
   .vidElem {
-    display: none;
+    /* display: none; */
   }
   #section1 h2 {
-    font-size: 200%;
-    margin-left: 10%;
+    font-size: 32px;
+    /* margin-left: 10%;
     width: 80%;
-    margin-top: 10%;
+    margin-top: 10%; */
   }
   .circle {
     clip-path: circle(250px at left -20px);

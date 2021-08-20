@@ -17,13 +17,10 @@ function Whoami() {
                             strings: ["Hello, I'm R2D2 ...", "How are you?"],
                             autoStart: true,
                             loop: true,
-                          }}
+                        }}
                     />
                 </div>
-                R2-D2, was an R2-series astromech droid manufactured by Industrial Automaton with masculine programming. A smart, spunky and reliable droid who would serve a multitude of masters over his lifetime, R2-D2 was never given a full memory wipe, apart from a partial wipe of select information by Cad Bane during the senate hostage crisis, nor did he ever receive new programming, with these factors resulting in an adventurous and independent attitude. Often finding himself in pivotal moments in galactic history, his bravery and ingenuity saved the galaxy on numerous occasions.
-                <br />
-                <br />
-                R2-D2 has served Padmé Amidala, Anakin Skywalker, and Luke Skywalker in turn, showing great bravery in rescuing his masters and their friends from many perils. A skilled starship mechanic and fighter pilot's assistant, he has an unlikely but enduring friendship with the fussy protocol droid C-3PO.
+                R2D2 is an R2-series astromech droid manufactured by Industrial Automaton with masculine programming. A smart, spunky droid who can serve a multitude of masters over his long lifetime, R2-D2 has never been given a full memory wipe nor has he ever received new programming, with these factors resulting in an adventurous and independent attitude.Various of his models have been included in pivotal moments of galactic history, their bravery and ingenuity has saved the galaxy on numerous occasions. They have showed great bravery in rescuing their masters and their friends from many perils.
             </div>
         </main>
     )
