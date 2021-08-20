@@ -35,13 +35,7 @@ function Buyme() {
                     <div id="Features" className="tabcontent">
                         <h3>Features</h3>
                         <p style={{ "textAlign": "justify", "marginTop": "5%" }}>
-                            R2D2 is an R2-series astromech droid manufactured by Industrial Automaton with masculine programming.
-                            A smart, spunky droid who can serve a multitude of masters over his long lifetime, R2-D2 has never been
-                            given a full memory wipe nor has he ever received new programming, with these factors resulting in an
-                            adventurous and independent attitude.
-                            From serving iced tea to battling evil pesky robots, R2D2 is a loyal and valuable droid to have.
-                            Various of his models have been included in pivotal moments of
-                            galactic history, their bravery and ingenuity has saved the galaxy on numerous occasions.
+                            A skilled starship mechanic and fighter pilot's assistant, the R2D2 models can adapt easily to any other tasks or situations presented to them. They come with a variety of equipment useful in different types of circumstances and have the fastest processing speed that a droid can have. Tested by drowning, throwing in a quicksand and left to fend for itself in a sandstorm, the R2D2 has always managed to escape from any problem that it can not shoot or solve. From serving iced tea to battling evil battle droids, R2D2 is a loyal and valuable bot to have.
                         </p>
                     </div>
 

@@ -31,7 +31,7 @@ function Home() {
                         }}
                     />
                 </h2>
-                <video autoPlay muted loop>
+                <video autoPlay muted loop className="vidElem">
                     <source src={process.env.PUBLIC_URL + "/videos/homebg.mp4"} type="video/mp4" />
                 </video>
                 <center>

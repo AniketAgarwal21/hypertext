@@ -26,20 +26,20 @@ function Testimonials() {
         },
         {
             name: "Rey Skywalker",
-            content: "A brilliant droid. R2D2 saved my life. Granted, he seems a little too arrogant about it, I wouldn't trade him for any other droid.",
+            content: "People kept telling me that R2D2 is the best droid you could have. They were absolutely right.",
             image: "rey.png",
             position: "first"
         },
         {
             name: "Poe Dameron",
-            content: "A brilliant droid. R2D2 saved my life. Granted, he seems a little too arrogant about it, I wouldn't trade him for any other droid.",
+            content: "R2D2 is a companionable and fun droid with more brains than most people I've met.",
             image: "poe-dam.png",
             position: "second"
         },
         {
 
             name: "Han Solo",
-            content: "A brilliant droid. R2D2 saved my life. Granted, he seems a little too arrogant about it, I wouldn't trade him for any other droid.",
+            content: "Hokey religions and ancient weapons are no match for a droid like R2D2 at your side.",
             image: "hans.png",
             position: "first"
         }
@@ -53,7 +53,7 @@ function Testimonials() {
                         strings: ['"It takes months to find a customer, and seconds to lose one"', "See how I have helped my owners"],
                         autoStart: true,
                         loop: true,
-                        delay: 50,
+                        delay: 40,
                         deleteSpeed: 30
                     }}
                 />

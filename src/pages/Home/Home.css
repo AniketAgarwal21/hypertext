@@ -57,7 +57,7 @@
     } */
 /* IT SHOULD HAVE THESE PROPERTIES WHEN SWITCHED TO DARK MODE */
 
-#section1 video {
+#section1 .vidElem {
   object-fit: cover;
   right: 0;
   position: absolute;
@@ -97,7 +97,7 @@
     width: 100%;
     display: none;
   }
-  video {
+  .vidElem {
     display: none;
   }
   #section1 h2 {
