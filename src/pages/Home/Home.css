@@ -49,13 +49,6 @@
   color: white;
   mix-blend-mode: darken;
 }
-/* TO CHANGE TO DARK MODE: */
-/* #section1 h1{
-        background: black;
-        color: white;
-        mix-blend-mode: darken;
-    } */
-/* IT SHOULD HAVE THESE PROPERTIES WHEN SWITCHED TO DARK MODE */
 
 #section1 .vidElem {
   object-fit: cover;
@@ -94,18 +87,9 @@
   #section1 h1 {
     font-size: 750%;
     top: -85px;
-    /* line-height: 80%;*/
-    /* width: 100%; */ 
-    /* display: none; */
-  }
-  .vidElem {
-    /* display: none; */
   }
   #section1 h2 {
     font-size: 32px;
-    /* margin-left: 10%;
-    width: 80%;
-    margin-top: 10%; */
   }
   .circle {
     clip-path: circle(250px at left -20px);
